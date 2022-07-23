@@ -1,24 +1,24 @@
 import React from "react";
 import "./intro.css";
-import Me from "../../img/man.png";
+import Me from "../../img/me-final.png";
 
 const Intro = () => {
   return (
     <div className="i">
       <div className="i-left">
-        <div class="i-left-wrapper">
+        <div className="i-left-wrapper">
           <h2 className="i-intro">Hello, My name is</h2>
           <h2 className="i-name">Akshay Dinesh</h2>
-          <div class="i-title">
-            <div class="i-title-wrapper">
-              <div class="i-title-item">Web Developer</div>
-              <div class="i-title-item">Web Developer</div>
-              <div class="i-title-item">Web Developer</div>
-              <div class="i-title-item">Web Developer</div>
-              <div class="i-title-item">Web Developer</div>
+          <div className="i-title">
+            <div className="i-title-wrapper">
+              <div className="i-title-item">Web Developer</div>
+              <div className="i-title-item">Web Developer</div>
+              <div className="i-title-item">Web Developer</div>
+              <div className="i-title-item">Web Developer</div>
+              <div className="i-title-item">Web Developer</div>
             </div>
           </div>
-          <p class="i-desc">
+          <p className="i-desc">
             Lorem ipsum, dolor sit amet consectetur adipisicing elit.
             Praesentium aliquam distinctio nesciunt voluptas repudiandae atque
             deserunt modi, esse nihil provident, deleniti repellat ipsa! Vero
@@ -83,8 +83,8 @@ const Intro = () => {
         </svg>
       </div>
       <div className="i-right">
-        <div class="i-bg"></div>
-        <img src={Me} alt="" class="i-img" />
+        <div className="i-bg"></div>
+        <img src={Me} alt="" className="i-img" />
       </div>
     </div>
   );
