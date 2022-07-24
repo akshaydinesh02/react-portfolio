@@ -3,8 +3,31 @@ import "./contact.css";
 import Phone from "../../img/phone.png";
 import Email from "../../img/email.png";
 import Address from "../../img/address.png";
+import { useRef } from "react";
+import emailjs from "@emailjs/browser";
 
 const Contact = () => {
+  const formRef = useRef();
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_fcnr50e",
+        "template_m7wm8fi",
+        formRef.current,
+        "7hoWKtugnnSAxToOY"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  };
   return (
     <div className="c">
       <div className="c-bg"></div>
@@ -25,8 +48,11 @@ const Contact = () => {
           </div>
         </div>
         <div className="c-right">
-          <p className="c-desc">Drop a message!</p>
-          <form>
+          <p className="c-desc">
+            If you have any ideas that needs to be implemented or if you want to
+            get to know me, <strong>Drop a message!</strong>
+          </p>
+          <form ref={formRef} onSubmit={handleSubmit}>
             <input type="text" placeholder="Name" name="user_name" />
             <input type="text" placeholder="Subject" name="user_subject" />
             <input type="text" placeholder="Email" name="user_email" />
