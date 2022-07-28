@@ -2,8 +2,9 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App";
 import { ThemeProvider } from "./context";
-import "./queries.css";
-import "./theme.css";
+import "./general.css"; // Global css file
+import "./queries.css"; // Media queries
+import "./theme.css"; // Color scheme
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(

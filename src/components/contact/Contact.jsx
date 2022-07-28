@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./contact.css";
 import Phone from "../../img/phone.png";
 import Email from "../../img/email.png";
@@ -6,9 +6,11 @@ import Address from "../../img/address.png";
 import { useRef, useContext } from "react";
 import emailjs from "@emailjs/browser";
 import { ThemeContext } from "../../context";
+import Button from "../cta-button/Button";
 
 const Contact = () => {
   const formRef = useRef();
+  const [message, setMessage] = useState(false);
 
   const theme = useContext(ThemeContext);
   const darkMode = theme.state.darkMode;
@@ -21,18 +23,19 @@ const Contact = () => {
         "service_fcnr50e",
         "template_m7wm8fi",
         formRef.current,
-        "7hoWKtugnnSAxToOY"
+        "7hoWKtugnnSAxToO"
+        // Y
       )
       .then(
         (result) => {
           console.log(result.text);
+          setMessage(true);
+          e.target.reset();
         },
         (error) => {
           console.log(error.text);
         }
       );
-
-    formRef.current.clear();
   };
   return (
     <div className={`c ${darkMode ? "dark" : "light"}`}>
@@ -41,9 +44,9 @@ const Contact = () => {
         <div className="c-left">
           <h1 className="c-title">Let's get in touch!</h1>
           <div className="c-info">
-            <div className="c-info-item">
+            {/* <div className="c-info-item">
               <img src={Phone} alt="" className="c-icon" /> +91 123456789
-            </div>
+            </div> */}
             <div className="c-info-item">
               <img src={Email} alt="" className="c-icon" /> akshay5632@gmail.com
             </div>
@@ -55,15 +58,19 @@ const Contact = () => {
         </div>
         <div className="c-right">
           <p className="c-desc">
-            If you have any ideas that needs to be implemented or if you want to
-            get to know me, <strong>Drop a message!</strong>
+            If you'd like to hire me, enquire about my rates or give me feedback
+            of any kind, I'll be <strong>delighted to hear from you.</strong>
+            <br />
           </p>
           <form ref={formRef} onSubmit={handleSubmit}>
             <input type="text" placeholder="Name" name="user_name" />
             <input type="text" placeholder="Subject" name="user_subject" />
             <input type="text" placeholder="Email" name="user_email" />
             <textarea rows="5" placeholder="Message" name="message" />
-            <button>Submit</button>
+            <Button name="Submit" />
+            <p className="user_success">
+              {message && "Thank you, I shall get back to you ASAP! :)"}
+            </p>
           </form>
         </div>
       </div>

@@ -3,6 +3,7 @@ import "./intro.css";
 import Me from "../../img/me-final.png";
 import { useContext } from "react";
 import { ThemeContext } from "../../context";
+import Button from "../cta-button/Button";
 
 const Intro = () => {
   const theme = useContext(ThemeContext);
@@ -16,18 +17,20 @@ const Intro = () => {
           <div className="i-title">
             <div className="i-title-wrapper">
               <div className="i-title-item">Front End Developer</div>
-              <div className="i-title-item">Nutrition & Fitness Consultant</div>
             </div>
           </div>
           <p className="i-desc">
             I am a front end developer. <br /> I develop Websites & Web-Apps
-            using React JS. <br />I am an engineering graduate from{" "}
-            <strong>BMS Institute of Technology!</strong>
+            using React JS.
           </p>
           <div className="i-social">
             <i className="i-social-icon fa-brands fa-linkedin-in"></i>
             <i className="i-social-icon fa-brands fa-github"></i>
             <i className="i-social-icon fa-brands fa-instagram"></i>
+          </div>
+          <div className="i-cta">
+            <Button className="btn-resume" name="Resume" />
+            <Button className="btn-contact" name="Contact" />
           </div>
         </div>
         <svg

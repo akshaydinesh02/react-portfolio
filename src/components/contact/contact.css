@@ -69,10 +69,3 @@ textarea {
   font-size: 14px;
   padding-left: 10px;
 }
-
-button {
-  border: none;
-  padding: 15px;
-  font-weight: 500;
-  cursor: pointer;
-}

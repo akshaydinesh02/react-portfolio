@@ -1,3 +1,32 @@
+/* General colors */
+.fa-linkedin-in:hover,
+.fa-linkedin-in:active {
+  color: #0a66c2;
+}
+.fa-github:hover,
+.fa-github:active {
+  color: #6e5494;
+}
+.instagram-link,
+.fa-instagram:hover,
+.fa-instagram:active,
+.eyz-insta:hover,
+.eyz-insta:active {
+  color: #c13584;
+}
+
+/* Button colors */
+.btn-resume:hover,
+.btn-resume:active {
+  background-color: red;
+}
+.btn-resume:link,
+.btn-resume:visited {
+  color: black;
+}
+
+/* **************************************** */
+/* THEMES */
 /* ---------------------- */
 /* Light theme */
 /* ---------------------- */
@@ -10,26 +39,12 @@
 }
 
 /* Intro section */
-
 .i.light .i-title-item {
   color: #59b256;
 }
 
 .i.light .i-bg {
   background-color: #59b256;
-}
-
-.i.light .fa-linkedin-in:hover,
-.i.light .fa-linkedin-in:active {
-  color: #0a66c2;
-}
-.i.light .fa-github:hover,
-.i.light .fa-github:active {
-  color: #6e5494;
-}
-.i.light .fa-instagram:hover,
-.i.light .fa-instagram:active {
-  color: #c13584;
 }
 
 /* About section */
@@ -74,19 +89,6 @@
 
 .i.dark .i-bg {
   background-color: #59b256;
-}
-
-.i.dark .fa-linkedin-in:hover,
-.i.dark .fa-linkedin-in:active {
-  color: #0a66c2;
-}
-.i.dark .fa-github:hover,
-.i.dark .fa-github:active {
-  color: #6e5494;
-}
-.i.dark .fa-instagram:hover,
-.i.dark .fa-instagram:active {
-  color: #c13584;
 }
 
 /* About section */
