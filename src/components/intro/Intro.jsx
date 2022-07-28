@@ -16,14 +16,14 @@ const Intro = () => {
             </div>
           </div>
           <p className="i-desc">
-            I am a budding front end developer. <br /> I develop Websites &
-            Web-Apps using React JS. <br />I am an engineering graduate from{" "}
+            I am a front end developer. <br /> I develop Websites & Web-Apps
+            using React JS. <br />I am an engineering graduate from{" "}
             <strong>BMS Institute of Technology!</strong>
           </p>
           <div className="i-social">
-            <i class="i-social-icon fa-brands fa-linkedin-in"></i>
-            <i class="i-social-icon fa-brands fa-github"></i>
-            <i class="i-social-icon fa-brands fa-instagram"></i>
+            <i className="i-social-icon fa-brands fa-linkedin-in"></i>
+            <i className="i-social-icon fa-brands fa-github"></i>
+            <i className="i-social-icon fa-brands fa-instagram"></i>
           </div>
         </div>
         <svg

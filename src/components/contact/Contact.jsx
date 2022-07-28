@@ -3,11 +3,15 @@ import "./contact.css";
 import Phone from "../../img/phone.png";
 import Email from "../../img/email.png";
 import Address from "../../img/address.png";
-import { useRef } from "react";
+import { useRef, useContext } from "react";
 import emailjs from "@emailjs/browser";
+import { ThemeContext } from "../../context";
 
 const Contact = () => {
   const formRef = useRef();
+
+  const theme = useContext(ThemeContext);
+  const darkMode = theme.state.darkMode;
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -27,6 +31,8 @@ const Contact = () => {
           console.log(error.text);
         }
       );
+
+    formRef.current.clear();
   };
   return (
     <div className="c">
