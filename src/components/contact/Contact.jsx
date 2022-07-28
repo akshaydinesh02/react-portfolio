@@ -35,7 +35,7 @@ const Contact = () => {
     formRef.current.clear();
   };
   return (
-    <div className="c">
+    <div className={`c ${darkMode ? "dark" : "light"}`}>
       <div className="c-bg"></div>
       <div className="c-wrapper">
         <div className="c-left">

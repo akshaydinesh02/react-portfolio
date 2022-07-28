@@ -6,12 +6,13 @@ import { ThemeContext } from "../../context";
 
 const Toggle = () => {
   const theme = useContext(ThemeContext);
+  const darkMode = theme.state.darkMode;
 
   const handleClick = () => {
     theme.dispatch({ type: "TOGGLE" });
   };
   return (
-    <div className="t">
+    <div className={`t ${darkMode ? "dark" : "light"}`}>
       <img src={Sun} alt="" className="t-icon" />
       <img src={Moon} alt="" className="t-icon" />
       <div

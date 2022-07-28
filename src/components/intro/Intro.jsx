@@ -1,10 +1,14 @@
 import React from "react";
 import "./intro.css";
 import Me from "../../img/me-final.png";
+import { useContext } from "react";
+import { ThemeContext } from "../../context";
 
 const Intro = () => {
+  const theme = useContext(ThemeContext);
+  const darkMode = theme.state.darkMode;
   return (
-    <div className="i">
+    <div className={`i ${darkMode ? "dark" : "light"}`}>
       <div className="i-left">
         <div className="i-left-wrapper">
           <h2 className="i-intro">Hello, My name is</h2>

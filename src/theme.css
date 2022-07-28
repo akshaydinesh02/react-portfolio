@@ -1,0 +1,114 @@
+/* ---------------------- */
+/* Light theme */
+/* ---------------------- */
+
+/* MAIN */
+.container.light {
+  background-color: white;
+  color: #333;
+  transition: all 0.3s;
+}
+
+/* Intro section */
+
+.i.light .i-title-item {
+  color: #59b256;
+}
+
+.i.light .i-bg {
+  background-color: #59b256;
+}
+
+.i.light .fa-linkedin-in:hover,
+.i.light .fa-linkedin-in:active {
+  color: #0a66c2;
+}
+.i.light .fa-github:hover,
+.i.light .fa-github:active {
+  color: #6e5494;
+}
+.i.light .fa-instagram:hover,
+.i.light .fa-instagram:active {
+  color: #c13584;
+}
+
+/* About section */
+.a.light .a-card.bg.light {
+  background-color: #333;
+}
+
+/* Contact section */
+.c.light .c-bg {
+  background-color: #59b256;
+}
+
+.c.light button {
+  background-color: #59b256;
+  color: white;
+}
+
+/* Toggle theme */
+.t.light {
+  background-color: white;
+}
+
+.t.light .t-button {
+  background-color: #999;
+}
+
+/* ---------------------- */
+/* Dark theme */
+/* ---------------------- */
+
+/* MAIN */
+.container.dark {
+  background-color: #222;
+  color: white;
+  transition: all 0.3s;
+}
+
+/* Intro section */
+.i.dark .i-title-item {
+  color: #59b256;
+}
+
+.i.dark .i-bg {
+  background-color: #59b256;
+}
+
+.i.dark .fa-linkedin-in:hover,
+.i.dark .fa-linkedin-in:active {
+  color: #0a66c2;
+}
+.i.dark .fa-github:hover,
+.i.dark .fa-github:active {
+  color: #6e5494;
+}
+.i.dark .fa-instagram:hover,
+.i.dark .fa-instagram:active {
+  color: #c13584;
+}
+
+/* About section */
+.a.dark .a-card.bg {
+  background-color: #333;
+}
+
+/* Contact section */
+.c.dark .c-bg {
+  background-color: #59b256;
+}
+
+.c.dark button {
+  background-color: #59b256;
+  color: white;
+}
+
+/* Toggle theme */
+.t.dark {
+  background-color: white;
+}
+
+.t.dark .t-button {
+  background-color: #999;
+}
