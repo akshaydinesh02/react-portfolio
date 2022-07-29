@@ -15,7 +15,7 @@
 }
 
 .i-left-wrapper {
-  padding: 50px 0px 50px 50px;
+  padding: 5rem 0rem 5rem 5rem;
   height: 50%;
   display: flex;
   flex-direction: column;
@@ -24,27 +24,25 @@
 }
 
 .i-intro {
-  font-size: 30px;
+  font-size: 3rem;
   font-weight: 300;
 }
 
 .i-name {
-  font-size: 50px;
+  font-size: 5.2rem;
 }
 
 .i-title {
-  height: 50px;
+  height: 5rem;
   overflow: hidden;
 }
 
-.i-title-wrapper {
-  height: 100%;
-  /* animation: move 10s ease-in-out infinite alternate; */
-}
-
 .i-title-item {
+  font-size: 3rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
   animation: flip 2s infinite;
-  animation-delay: calc(0.2s * var(--i));
 }
 
 @keyframes flip {
@@ -54,34 +52,15 @@
   }
 }
 
-/* @keyframes move {
-  25% {
-    transform: translateY(-50px);
-  }
-  50% {
-    transform: translateY(-100px);
-  }
-  75% {
-    transform: translateY(-150px);
-  }
-  100% {
-    transform: translateY(-200px);
-  }
-} */
-
-.i-title-item {
-  height: 50px;
-  font-size: 30px;
-  font-weight: bold;
-  display: flex;
-  align-items: center;
+.i-desc {
+  font-size: 1.6rem;
 }
 
 .i-scroll {
-  width: 30px;
-  height: 30px;
+  width: 3rem;
+  height: 3rem;
   position: absolute;
-  bottom: 20px;
+  bottom: 2rem;
 }
 
 .i-img {
@@ -105,8 +84,8 @@
 }
 
 .i-social-icon {
-  font-size: 30px;
-  padding-right: 30px;
+  font-size: 3rem;
+  padding-right: 3rem;
   cursor: pointer;
   transition: all 0.3s;
 }

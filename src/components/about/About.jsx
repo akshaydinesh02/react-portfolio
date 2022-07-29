@@ -45,7 +45,7 @@ const About = () => {
           {/* <img src={Instagram} alt="" className="a-award-img" /> */}
           <i className="i-social-icon fa-brands fa-instagram eyz-insta"></i>
           <div className="a-award-texts">
-            <h4 className="award-title"> Some extra information</h4>
+            <h4 className="a-award-title"> Nutrition & Fitness Consultation</h4>
             <p className="a-award-desc">
               I also mentor people for nutritional and fitness needs in my free
               time! <br /> Checkout my{" "}

@@ -1,13 +1,24 @@
-import React from "react";
+import React, { useRef } from "react";
 import "./intro.css";
 import Me from "../../img/me-final.png";
 import { useContext } from "react";
 import { ThemeContext } from "../../context";
 import Button from "../cta-button/Button";
+import Contact from "../contact/Contact";
 
-const Intro = () => {
+const Intro = React.forwardRef((props, ref) => {
+  console.log(ref);
   const theme = useContext(ThemeContext);
   const darkMode = theme.state.darkMode;
+
+  const scrollToSection = (elementRef) => {
+    console.log(elementRef);
+    window.scrollTo({
+      top: elementRef.current.offsetTop,
+      behavior: "smooth",
+    });
+  };
+
   return (
     <div className={`i ${darkMode ? "dark" : "light"}`}>
       <div className="i-left">
@@ -20,8 +31,7 @@ const Intro = () => {
             </div>
           </div>
           <p className="i-desc">
-            I am a front end developer. <br /> I develop Websites & Web-Apps
-            using React JS.
+            I develop Websites & Web-Apps using React JS.
           </p>
           <div className="i-social">
             <i className="i-social-icon fa-brands fa-linkedin-in"></i>
@@ -30,7 +40,12 @@ const Intro = () => {
           </div>
           <div className="i-cta">
             <Button className="btn-resume" name="Resume" />
-            <Button className="btn-contact" name="Contact" />
+            <Button
+              onClick={() => scrollToSection(ref)}
+              ref={ref}
+              className="btn-contact"
+              name="Contact"
+            />
           </div>
         </div>
         <svg
@@ -96,6 +111,6 @@ const Intro = () => {
       </div>
     </div>
   );
-};
+});
 
 export default Intro;

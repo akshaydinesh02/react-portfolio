@@ -1,11 +1,11 @@
 .t {
-  width: 50px;
-  height: 25px;
+  width: 5rem;
+  height: 2.5rem;
   border-radius: 20px;
   border: 1px solid #999;
   position: fixed;
-  top: 10px;
-  right: 10px;
+  top: 1rem;
+  right: 1rem;
   z-index: 999;
   display: flex;
   align-items: center;
@@ -13,13 +13,13 @@
 }
 
 .t-icon {
-  width: 15px;
-  height: 15px;
+  width: 1.5rem;
+  height: 1.5rem;
 }
 
 .t-button {
-  width: 25px;
-  height: 25px;
+  width: 2.5rem;
+  height: 2.5rem;
   border-radius: 50%;
   position: absolute;
   cursor: pointer;

@@ -8,12 +8,9 @@ const ProductList = () => {
   return (
     <div className="pl">
       <div className="pl-texts">
-        <h1 className="pl-title">Title</h1>
+        <h1 className="pl-title">My Work</h1>
         <p className="pl-desc">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas,
-          nostrum? Culpa illum obcaecati voluptatem totam ipsam quis cumque
-          temporibus vitae incidunt debitis provident itaque eaque, dolores cum
-          ad ea adipisci!
+          These are some of the websites and web-apps that I have developed!
         </p>
       </div>
       <div className="pl-list">
