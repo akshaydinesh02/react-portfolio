@@ -7,7 +7,6 @@ import { ThemeContext } from "../../context";
 const About = () => {
   const theme = useContext(ThemeContext);
   const darkMode = theme.state.darkMode;
-  console.log(darkMode);
   return (
     <div className={`a ${darkMode ? "dark" : "light"}`}>
       <div className="a-left">

@@ -6,18 +6,17 @@ import { ThemeContext } from "../../context";
 import Button from "../cta-button/Button";
 import Contact from "../contact/Contact";
 
-const Intro = React.forwardRef((props, ref) => {
-  console.log(ref);
+const Intro = () => {
   const theme = useContext(ThemeContext);
   const darkMode = theme.state.darkMode;
 
-  const scrollToSection = (elementRef) => {
-    console.log(elementRef);
-    window.scrollTo({
-      top: elementRef.current.offsetTop,
-      behavior: "smooth",
-    });
-  };
+  // const scrollToSection = (elementRef) => {
+  //   console.log(elementRef);
+  //   window.scrollTo({
+  //     top: elementRef.current.offsetTop,
+  //     behavior: "smooth",
+  //   });
+  // };
 
   return (
     <div className={`i ${darkMode ? "dark" : "light"}`}>
@@ -40,12 +39,7 @@ const Intro = React.forwardRef((props, ref) => {
           </div>
           <div className="i-cta">
             <Button className="btn-resume" name="Resume" />
-            <Button
-              onClick={() => scrollToSection(ref)}
-              ref={ref}
-              className="btn-contact"
-              name="Contact"
-            />
+            <Button className="btn-contact" name="Contact" />
           </div>
         </div>
         <svg
@@ -111,6 +105,6 @@ const Intro = React.forwardRef((props, ref) => {
       </div>
     </div>
   );
-});
+};
 
 export default Intro;
