@@ -21,7 +21,6 @@ const About = () => {
       </div>
       <div className="a-right">
         <h1 className="a-title">About me</h1>
-        {/* <p className="a-sub">This is a long sub title</p> */}
         <div className="a-desc">
           A graduate from{" "}
           <strong>BMS Institute of Technology, Bangalore.</strong>
@@ -29,12 +28,30 @@ const About = () => {
           Seeking internship/job opportunities in front end development.
           <br />
           <br />
-          Skilled in
+          Skilled in:
           <ul>
-            <li>HTML5</li>
-            <li>CSS3 </li>
-            <li>JavaScript (ES6)</li>
-            <li>React & Angular frameworks</li>
+            <li>
+              Font End Development
+              <ul>
+                <li>HTML5</li>
+                <li>CSS3 incl. LESS/SASS</li>
+                <li>JavaScript (ES6+)</li>
+                <li>React</li>
+              </ul>
+            </li>
+            <li>
+              Database
+              <ul>
+                <li>MySQL</li>
+              </ul>
+            </li>
+            <li>
+              Other tools
+              <ul>
+                <li>Git</li>
+                <li>Photoshop</li>
+              </ul>
+            </li>
           </ul>
           <br />
           Apart from that I like to travel, practice martial arts, lift weights

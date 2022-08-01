@@ -1,12 +1,10 @@
-import React, { useState } from "react";
+import React, { useState, useContext, useRef } from "react";
 import "./contact.css";
 import Phone from "../../img/phone.png";
 import Email from "../../img/email.png";
 import Address from "../../img/address.png";
-import { useRef, useContext } from "react";
 import emailjs from "@emailjs/browser";
 import { ThemeContext } from "../../context";
-import Button from "../cta-button/Button";
 
 const Contact = () => {
   const formRef = useRef();
@@ -14,6 +12,12 @@ const Contact = () => {
 
   const theme = useContext(ThemeContext);
   const darkMode = theme.state.darkMode;
+
+  const contactRef = useRef(null);
+
+  const textExample = () => {
+    console.log("hello");
+  };
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -38,9 +42,9 @@ const Contact = () => {
       );
   };
   return (
-    <div className={`c ${darkMode ? "dark" : "light"}`}>
+    <div id="contact" className={`c ${darkMode ? "dark" : "light"}`}>
       <div className="c-bg"></div>
-      <div className="c-wrapper">
+      <div ref={contactRef} className="c-wrapper">
         <div className="c-left">
           <h1 className="c-title">Let's get in touch!</h1>
           <div className="c-info">
@@ -67,7 +71,7 @@ const Contact = () => {
             <input type="text" placeholder="Subject" name="user_subject" />
             <input type="text" placeholder="Email" name="user_email" />
             <textarea rows="5" placeholder="Message" name="message" />
-            <Button name="Submit" />
+            <button className="btn btn-submit">Submit</button>
             <p className="user_success">
               {message && "Thank you, I shall get back to you ASAP! :)"}
             </p>

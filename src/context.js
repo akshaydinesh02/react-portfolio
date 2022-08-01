@@ -1,5 +1,7 @@
 import { createContext, useReducer } from "react";
 
+// THEME CHANGE CONTEXT
+
 export const ThemeContext = createContext();
 
 const INITIAL_STATE = { darkMode: false };

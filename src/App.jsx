@@ -3,21 +3,28 @@ import About from "./components/about/About";
 import ProductList from "./components/productList/ProductList";
 import Contact from "./components/contact/Contact";
 import Toggle from "./components/toggle/Toggle";
-import { useContext } from "react";
+import React, { useContext, useRef } from "react";
 import { ThemeContext } from "./context";
+import { Routes, Route } from "react-router-dom";
 
-const App = () => {
+const App = React.forwardRef((props, ref) => {
   const theme = useContext(ThemeContext);
   const darkMode = theme.state.darkMode;
+
   return (
     <div className={`container ${darkMode ? "dark" : "light"}`}>
+      <Routes>
+        <Route path="/" element={<Intro />} />
+        <Route path="contact" element={<Contact />} />
+        <Route path="about" element={<About />} />
+        <Route path="pl" element={<ProductList />} />
+      </Routes>
       <Toggle />
-      <Intro />
       <About />
       <ProductList />
       <Contact />
     </div>
   );
-};
+});
 
 export default App;
