@@ -4,20 +4,14 @@ import Phone from "../../img/phone.png";
 import Email from "../../img/email.png";
 import Address from "../../img/address.png";
 import emailjs from "@emailjs/browser";
-import { ThemeContext } from "../../context";
+import { SwitchContext } from "../../context";
 
 const Contact = () => {
   const formRef = useRef();
   const [message, setMessage] = useState(false);
 
-  const theme = useContext(ThemeContext);
+  const theme = useContext(SwitchContext);
   const darkMode = theme.state.darkMode;
-
-  const contactRef = useRef(null);
-
-  const textExample = () => {
-    console.log("hello");
-  };
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -44,7 +38,7 @@ const Contact = () => {
   return (
     <div id="contact" className={`c ${darkMode ? "dark" : "light"}`}>
       <div className="c-bg"></div>
-      <div ref={contactRef} className="c-wrapper">
+      <div className="c-wrapper">
         <div className="c-left">
           <h1 className="c-title">Let's get in touch!</h1>
           <div className="c-info">

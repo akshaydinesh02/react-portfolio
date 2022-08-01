@@ -2,16 +2,16 @@ import React, { useRef } from "react";
 import "./intro.css";
 import Me from "../../img/me-final.png";
 import { useContext } from "react";
-import { ThemeContext } from "../../context";
+import { SwitchContext } from "../../context";
 import { HashLink as Link } from "react-router-hash-link";
 
 const Intro = () => {
-  const theme = useContext(ThemeContext);
+  const theme = useContext(SwitchContext);
   const darkMode = theme.state.darkMode;
 
   return (
     <div>
-      <div className={`i ${darkMode ? "dark" : "light"}`}>
+      <div id="intro" className={`i ${darkMode ? "dark" : "light"}`}>
         <div className="i-left">
           <div className="i-left-wrapper">
             <h2 className="i-intro">Hello, My name is</h2>

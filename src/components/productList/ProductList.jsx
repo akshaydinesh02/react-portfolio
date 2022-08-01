@@ -6,7 +6,7 @@ import React from "react";
 
 const ProductList = () => {
   return (
-    <div className="pl">
+    <div id="pl" className="pl">
       <div className="pl-texts">
         <h1 className="pl-title">My Work</h1>
         <p className="pl-desc">

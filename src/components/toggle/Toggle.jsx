@@ -2,14 +2,14 @@ import "./toggle.css";
 import Sun from "../../img/sun.png";
 import Moon from "../../img/moon.png";
 import { useContext } from "react";
-import { ThemeContext } from "../../context";
+import { SwitchContext } from "../../context";
 
 const Toggle = () => {
-  const theme = useContext(ThemeContext);
+  const theme = useContext(SwitchContext);
   const darkMode = theme.state.darkMode;
 
   const handleClick = () => {
-    theme.dispatch({ type: "TOGGLE" });
+    theme.dispatch({ type: "TOGGLE-THEME" });
   };
   return (
     <div className={`t ${darkMode ? "dark" : "light"}`}>

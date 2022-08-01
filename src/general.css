@@ -32,6 +32,7 @@ body {
   background-color: buttonface;
   /* animation */
   transition: all 0.3s;
+  color: inherit;
 }
 
 /*

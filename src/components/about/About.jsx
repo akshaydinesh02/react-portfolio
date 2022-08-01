@@ -2,13 +2,14 @@ import React from "react";
 import "./about.css";
 import Instagram from "../../img/award.png";
 import { useContext } from "react";
-import { ThemeContext } from "../../context";
+import { SwitchContext } from "../../context";
+import { NavHashLink as Link } from "react-router-hash-link";
 
 const About = () => {
-  const theme = useContext(ThemeContext);
+  const theme = useContext(SwitchContext);
   const darkMode = theme.state.darkMode;
   return (
-    <div className={`a ${darkMode ? "dark" : "light"}`}>
+    <div id="about" className={`a ${darkMode ? "dark" : "light"}`}>
       <div className="a-left">
         <div className="a-card bg"></div>
         <div className="a-card">
@@ -73,6 +74,13 @@ const About = () => {
           </div>
         </div>
       </div>
+      <Link to="/" smooth />
+
+      <Link to="#about" smooth />
+
+      <Link to="#pl" smooth />
+
+      <Link to="#contact" smooth />
     </div>
   );
 };
