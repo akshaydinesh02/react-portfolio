@@ -19,8 +19,8 @@
 
 .a-card.bg {
   position: absolute;
-  top: 50px;
-  left: 50px;
+  top: 5rem;
+  left: 5rem;
 }
 
 .a-card {
@@ -44,7 +44,6 @@
 }
 
 .a-title {
-  font-size: 3.6rem;
   font-weight: 400;
   margin-bottom: 2rem;
 }
@@ -54,7 +53,7 @@
 }
 
 .a-desc {
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   font-weight: 400;
 }
 
@@ -66,17 +65,24 @@
 }
 
 .a-award-texts {
-  font-size: 1.4rem;
   width: 70%;
 }
 
 .a-award-title {
   font-size: 2.4rem;
   font-weight: bold;
-  color: #555;
   margin-bottom: 1.4rem;
 }
 
-.eyz-insta {
+.a-award-desc {
+  font-size: 1.6rem;
+}
+
+.a-icon-dumbbell {
   font-size: 10rem;
+}
+
+.li-header {
+  font-size: 1.6rem;
+  font-weight: 500;
 }

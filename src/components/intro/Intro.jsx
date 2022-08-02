@@ -3,11 +3,17 @@ import "./intro.css";
 import Me from "../../img/me-final.png";
 import { useContext } from "react";
 import { SwitchContext } from "../../context";
-import { HashLink as Link } from "react-router-hash-link";
+import { HashLink } from "react-router-hash-link";
 
 const Intro = () => {
   const theme = useContext(SwitchContext);
   const darkMode = theme.state.darkMode;
+
+  const linksObject = {
+    linkedin: "https://www.linkedin.com/in/akshaydinesh02/",
+    github: "https://github.com/akshay-dinesh/",
+    instagram: "https://www.instagram.com/akshay.dinesh/",
+  };
 
   return (
     <div>
@@ -25,17 +31,23 @@ const Intro = () => {
               I develop Websites & Web-Apps using React JS.
             </p>
             <div className="i-social">
-              <i className="i-social-icon fa-brands fa-linkedin-in"></i>
-              <i className="i-social-icon fa-brands fa-github"></i>
-              <i className="i-social-icon fa-brands fa-instagram"></i>
+              <a href={linksObject.linkedin} target="_blank" rel="noreferrer">
+                <i className="i-social-icon fa-brands fa-linkedin-in"></i>
+              </a>
+              <a href={linksObject.github} target="_blank" rel="noreferrer">
+                <i className="i-social-icon fa-brands fa-github"></i>
+              </a>
+              <a href={linksObject.instagram} target="_blank" rel="noreferrer">
+                <i className="i-social-icon fa-brands fa-instagram"></i>
+              </a>
             </div>
             <div className="i-cta">
-              <Link to="" className="btn btn-resume" name="Resume">
+              <HashLink to="" className="btn btn-resume" name="Resume">
                 Resume
-              </Link>
-              <Link to="#contact" className="btn btn-contact" smooth>
+              </HashLink>
+              <HashLink to="#contact" className="btn btn-contact" smooth>
                 Contact
-              </Link>
+              </HashLink>
             </div>
           </div>
           <svg

@@ -4,14 +4,16 @@
 }
 
 .c-bg {
-  width: 20px;
+  width: 2rem;
   height: 100%;
   position: absolute;
 }
 
 .c-wrapper {
-  padding: 50px;
+  height: 80vh;
+  padding: 20rem;
   display: flex;
+  align-items: center;
 }
 
 .c-left {
@@ -27,30 +29,33 @@
 }
 
 .c-title {
-  font-style: 60px;
   width: 80%;
+}
+
+.c-info {
+  font-size: 1.6rem;
 }
 
 .c-info-item {
   display: flex;
   align-items: center;
-  margin: 50px 0px;
-  font-weight: 300;
+  margin: 5rem 0rem;
+  font-weight: 400;
   width: 70%;
 }
 
 .c-icon {
-  width: 30px;
-  height: 30px;
-  margin-right: 20px;
+  width: 3rem;
+  height: 3rem;
+  margin-right: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
 }
 
-.c-desc {
-  font-weight: 300;
-}
-
-form {
-  margin-top: 20px;
+.c-form {
+  margin-top: 2rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -58,19 +63,26 @@ form {
   width: 100%;
 }
 
-input {
-  width: 50%;
-  height: 50px;
-  border: none;
-  border-bottom: 1px solid black;
-  margin: 10px 0px;
-  font-size: 14px;
-  padding-left: 10px;
+.c-form-input {
+  font-family: inherit;
+  margin: 1rem 0rem;
+  font-size: 1.6rem;
+  padding-left: 1rem;
+  border-radius: 10px;
 }
 
-textarea {
+.input {
+  width: 50%;
+  height: 5rem;
+  border: none;
+}
+
+.message {
   width: 100%;
-  margin: 10px 0px;
-  font-size: 14px;
-  padding-left: 10px;
+}
+
+.user-success {
+  font-size: 1.6rem;
+  font-weight: 500;
+  padding: 2rem 0 2rem 0;
 }

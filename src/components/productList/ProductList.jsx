@@ -8,9 +8,9 @@ const ProductList = () => {
   return (
     <div id="pl" className="pl">
       <div className="pl-texts">
-        <h1 className="pl-title">My Work</h1>
+        <h1 className="primary-heading">My Work</h1>
         <p className="pl-desc">
-          These are some of the websites and web-apps that I have developed!
+          These are some of the websites and web-apps I have developed!
         </p>
       </div>
       <div className="pl-list">

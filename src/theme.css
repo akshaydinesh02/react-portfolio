@@ -1,35 +1,37 @@
 /* General colors */
-.fa-linkedin-in:hover,
-.fa-linkedin-in:active {
+.fa-linkedin-in,
+.fa-linkedin-in {
   color: #0a66c2;
 }
-.fa-github:hover,
-.fa-github:active {
+.fa-github,
+.fa-github {
   color: #6e5494;
 }
 .instagram-link,
-.fa-instagram:hover,
-.fa-instagram:active,
-.eyz-insta:hover,
-.eyz-insta:active {
+.fa-instagram,
+.fa-instagram {
   color: #c13584;
 }
 
-/* Button colors */
-.btn-resume:hover,
-.btn-resume:active {
-  background-color: red;
+.fa-linkedin-in:hover,
+.fa-linkedin-in:active {
+  text-shadow: 0 0 1rem #0a66c2;
 }
-.btn-resume:link,
-.btn-resume:visited {
-  color: black;
+.fa-github:hover,
+.fa-github:active {
+  text-shadow: 0 0 1rem #6e5494;
+}
+.instagram-link,
+.fa-instagram:hover,
+.fa-instagram:active {
+  text-shadow: 0 0 1rem #c13584;
 }
 
-/* **************************************** */
+/* *************************************************************************************** */
 /* THEMES */
-/* ---------------------- */
+/* ---------------------------------------------------------------------------------------- */
 /* Light theme */
-/* ---------------------- */
+/* ---------------------------------------------------------------------------------------- */
 
 /* MAIN */
 .container.light {
@@ -38,28 +40,38 @@
   transition: all 0.3s;
 }
 
-/* Intro section */
+/* Intro and About section */
 .i.light .i-title-item {
   color: #59b256;
 }
 
-.i.light .i-bg {
-  background-color: #59b256;
+.i.light .i-bg,
+.a.light .a-card.bg {
+  background-color: #e3e6e8;
 }
 
-/* About section */
-.a.light .a-card.bg.light {
-  background-color: #333;
+.a.light .a-icon-dumbbell {
+  color: #024273;
 }
 
 /* Contact section */
 .c.light .c-bg {
-  background-color: #59b256;
+  background-color: #d4e8fc;
 }
 
-.c.light button {
-  background-color: #59b256;
-  color: white;
+.c.light .btn-submit {
+  background-color: #d4e8fc;
+  color: #333;
+}
+
+.c.light .btn-submit:hover,
+.c.light .btn-submit:active {
+  background-color: #aabaca;
+  color: #080808;
+}
+
+.c.light .input {
+  border-bottom: 1px solid black;
 }
 
 /* Toggle theme */
@@ -71,9 +83,52 @@
   background-color: #999;
 }
 
-/* ---------------------- */
+.n.light .n-menu-item {
+  color: #333;
+}
+
+.n.light .n-menu-item:hover,
+.n.light .n-menu-item:active {
+  text-shadow: 0 0 2.5rem #495057;
+}
+
+/* Button colors */
+
+.i.light .btn-resume,
+.i.light .btn-contact {
+  color: #333;
+  background-color: #e3e6e8;
+}
+
+.i.light .btn-resume:hover,
+.i.light .btn-resume:active,
+.i.light .btn-contact:hover,
+.i.light .btn-contact:active {
+  background-color: #b6b8ba;
+  color: #000000;
+}
+
+.i.light .btn-contact:focus,
+.i.light .btn-resume:focus {
+  box-shadow: 0 0 0 0.2rem #b6b8ba;
+}
+
+/* My work (Product list) */
+.p.light {
+  border: 2px solid #e3e6e8;
+}
+
+.p.light .p-circle {
+  background-color: white;
+}
+
+.p.light .p-browser {
+  background-color: #e3e6e8;
+}
+
+/* ---------------------------------------------------------------------------------------- */
 /* Dark theme */
-/* ---------------------- */
+/* ---------------------------------------------------------------------------------------- */
 
 /* MAIN */
 .container.dark {
@@ -82,27 +137,39 @@
   transition: all 0.3s;
 }
 
-/* Intro section */
+/* Intro and About section */
 .i.dark .i-title-item {
   color: #59b256;
 }
 
-.i.dark .i-bg {
-  background-color: #59b256;
+.i.dark .i-bg,
+.a.dark .a-card.bg {
+  background-color: #394146;
 }
 
-/* About section */
-.a.dark .a-card.bg {
-  background-color: #333;
+.a.dark .a-icon-dumbbell {
+  color: #9bd3fd;
 }
 
 /* Contact section */
 .c.dark .c-bg {
-  background-color: #59b256;
+  background-color: #07427e;
 }
 
-.c.dark button {
-  background-color: #59b256;
+.c.dark .btn-submit {
+  background-color: #07427e;
+  color: white;
+}
+
+.c.dark .btn-submit:hover,
+.c.dark .btn-submit:active {
+  background-color: #063565;
+}
+
+.c.dark .input,
+.c.dark .message {
+  border-bottom: 1px solid white;
+  background-color: #222;
   color: white;
 }
 
@@ -113,4 +180,46 @@
 
 .t.dark .t-button {
   background-color: #999;
+}
+
+.n.dark .n-menu-item {
+  color: white;
+}
+
+.n.dark .n-menu-item:hover,
+.n.dark .n-menu-item:active {
+  text-shadow: 0 0 2.5rem white;
+}
+
+/* Button colors */
+
+.i.dark .btn-resume,
+.i.dark .btn-contact {
+  color: white;
+  background-color: #394146;
+}
+
+.i.dark .btn-resume:hover,
+.i.dark .btn-resume:active,
+.i.dark .btn-contact:hover,
+.i.dark .btn-contact:active {
+  background-color: #2e3438;
+}
+
+.i.dark .btn-contact:focus,
+.i.dark .btn-resume:focus {
+  box-shadow: 0 0 0 0.2rem #c4c6c8;
+}
+
+/* My work (Product list) */
+.p.dark {
+  border: 2px solid #394146;
+}
+
+.p.dark .p-circle {
+  background-color: white;
+}
+
+.p.dark .p-browser {
+  background-color: #394146;
 }

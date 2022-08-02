@@ -16,22 +16,30 @@
 .nav-wrapper,
 .nav-wrapper:link,
 .nav-wrapper:visited {
-  display: flex;
   z-index: 999;
-  flex-direction: column;
-  padding: 1rem;
-  top: 1rem;
-  left: 5rem;
+  width: 100%;
+  height: 10vh;
+  padding: 1.6rem;
+  top: 0rem;
+  left: 0rem;
   position: fixed;
-  text-decoration: none;
   color: black;
-  font-size: 1.6rem;
   visibility: hidden;
-  transition: all 0.3s ease-in-out;
-  background-color: red;
-  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  /* background-color: white; */
+  opacity: 0.9;
 }
 
 .nav-wrapper.active {
   visibility: visible;
+}
+
+.n-menu-item {
+  text-decoration: none;
+  font-size: 2.4rem;
+  font-weight: 500;
+  transition: all 0.3s;
 }

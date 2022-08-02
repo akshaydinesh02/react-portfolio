@@ -26,7 +26,6 @@ const Contact = () => {
       )
       .then(
         (result) => {
-          console.log(result.text);
           setMessage(true);
           e.target.reset();
         },
@@ -40,33 +39,52 @@ const Contact = () => {
       <div className="c-bg"></div>
       <div className="c-wrapper">
         <div className="c-left">
-          <h1 className="c-title">Let's get in touch!</h1>
+          <h1 className="c-title secondary-heading">Let's get in touch!</h1>
           <div className="c-info">
-            {/* <div className="c-info-item">
-              <img src={Phone} alt="" className="c-icon" /> +91 123456789
-            </div> */}
             <div className="c-info-item">
-              <img src={Email} alt="" className="c-icon" /> akshay5632@gmail.com
+              <i className="c-icon fa-solid fa-envelope"></i>
+              <div className="c-info-item--text">akshay5632@gmail.com</div>
+              {/* <img src={Email} alt="" className="c-icon" /> */}
             </div>
             <div className="c-info-item">
-              <img src={Address} alt="" className="c-icon" /> Bengaluru,
-              Karnataka
+              <i class="c-icon fa-solid fa-location-dot"></i>
+              <div className="c-info-item--text"> Bengaluru, Karnataka</div>
             </div>
           </div>
         </div>
         <div className="c-right">
-          <p className="c-desc">
+          <p className="c-desc tertiary-heading">
             If you'd like to hire me, enquire about my rates or give me feedback
             of any kind, I'll be <strong>delighted to hear from you.</strong>
             <br />
           </p>
-          <form ref={formRef} onSubmit={handleSubmit}>
-            <input type="text" placeholder="Name" name="user_name" />
-            <input type="text" placeholder="Subject" name="user_subject" />
-            <input type="text" placeholder="Email" name="user_email" />
-            <textarea rows="5" placeholder="Message" name="message" />
+          <form className="c-form" ref={formRef} onSubmit={handleSubmit}>
+            <input
+              className="c-form-input input"
+              type="text"
+              placeholder="Name"
+              name="user_name"
+            />
+            <input
+              className="c-form-input input"
+              type="text"
+              placeholder="Subject"
+              name="user_subject"
+            />
+            <input
+              className="c-form-input input"
+              type="text"
+              placeholder="Email"
+              name="user_email"
+            />
+            <textarea
+              className="c-form-input message"
+              rows="5"
+              placeholder="Message"
+              name="message"
+            />
             <button className="btn btn-submit">Submit</button>
-            <p className="user_success">
+            <p className="user-success">
               {message && "Thank you, I shall get back to you ASAP! :)"}
             </p>
           </form>

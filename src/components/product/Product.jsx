@@ -1,10 +1,14 @@
 import "./product.css";
 
-import React from "react";
+import React, { useContext } from "react";
+import { SwitchContext } from "../../context";
 
 const Product = ({ img, link }) => {
+  const theme = useContext(SwitchContext);
+  const darkMode = theme.state.darkMode;
+
   return (
-    <div className="p">
+    <div className={`p ${darkMode ? "dark" : "light"}`}>
       <div className="p-browser">
         <div className="p-circle"></div>
         <div className="p-circle"></div>
