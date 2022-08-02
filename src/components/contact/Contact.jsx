@@ -1,8 +1,5 @@
 import React, { useState, useContext, useRef } from "react";
 import "./contact.css";
-import Phone from "../../img/phone.png";
-import Email from "../../img/email.png";
-import Address from "../../img/address.png";
 import emailjs from "@emailjs/browser";
 import { SwitchContext } from "../../context";
 

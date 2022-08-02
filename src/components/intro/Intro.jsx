@@ -1,4 +1,3 @@
-import React, { useRef } from "react";
 import "./intro.css";
 import Me from "../../img/me-final.png";
 import { useContext } from "react";

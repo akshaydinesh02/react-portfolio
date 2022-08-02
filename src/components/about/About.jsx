@@ -1,6 +1,5 @@
 import React from "react";
 import "./about.css";
-import Instagram from "../../img/award.png";
 import { useContext } from "react";
 import { SwitchContext } from "../../context";
 
