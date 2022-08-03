@@ -1,100 +1,142 @@
 /* MEDIA QUERIES */
 
+/* rem and em do NOT depend on html font size in media queries */
+
+/* 1rem = 1em = 16px */
+
 /* Tablet - 760px */
 /* Laptop and small screen - 1200px */
 
-/* Mobile - 480px */
-@media screen and (max-width: 480px) {
+/**********************************/
+/* BELOW 1344px (Smaller desktops) */
+/* 1350 (container size) / 16 (default
+font size = 84em  */
+/**********************************/
+@media screen and (max-width: 84em) {
+}
+
+/**********************************/
+/* BELOW 544px (phones]) */
+/**********************************/
+@media screen and (max-width: 32em) {
+  html {
+    /* 7px / 16px = 0.5625 (56.25%) [default font-size: 10] */
+    font-size: 50%;
+  }
+
   .i {
-    flex-direction: column;
+    flex-direction: column-reverse;
+    padding-bottom: 1rem;
+  }
+
+  .i-left {
+    flex: initial;
+  }
+
+  .i-right {
+    flex: initial;
+    position: initial;
   }
 
   .i-left-wrapper {
-    padding: 10px;
+    padding: 1rem;
     align-items: center;
     justify-content: center;
     text-align: center;
     height: 100%;
+    gap: 0.5rem;
   }
 
+  .i-name,
   .i-desc {
-    display: none;
+    margin-bottom: 3rem;
+  }
+
+  .i-social {
+    margin-bottom: 2rem;
+  }
+
+  .i-img {
+    height: 50%;
+    object-fit: contain;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .i-bg {
+    width: 100%;
+    height: 50%;
   }
 
   .a {
-    flex-direction: column;
-    text-align: center;
-    margin-top: 50px;
+    height: initial;
+    padding-bottom: 10rem;
   }
 
   .a-left {
-    width: 100%;
-  }
-
-  .a-card {
-    height: 30vh;
-  }
-
-  .a-card.bg,
-  .a-award {
     display: none;
+  }
+
+  .a-title {
+    margin-bottom: 2rem;
+    padding-top: 5rem;
+    text-align: center;
   }
 
   .a-right {
-    padding: 20px;
+    padding: 5rem;
+  }
+
+  .a-award {
+    margin-top: 5rem;
+    gap: 1.2rem;
+  }
+
+  .a-award-title {
+    font-size: 1.6rem;
   }
 
   .pl {
-    padding: 10px;
+    padding: 10rem 2.5rem 10rem 2.5rem;
+    height: 80vh;
+  }
+
+  .p {
+    width: 95%;
+    height: 10vh;
   }
 
   .pl-texts {
-    width: 100%;
+    width: initial;
   }
 
-  .pl-desc {
+  .c-bg {
     display: none;
   }
 
-  /* Products */
-  .p {
-    width: 40%;
-    height: 20vh;
+  .c-wrapper {
+    display: initial;
+    padding: 2rem;
   }
 
-  /* Contact */
-  .c-wrapper {
-    flex-direction: column;
-    padding: 0px 50px;
+  .c-left {
+    padding: 5rem 5rem 0 5rem;
   }
 
   .c-title {
-    font-size: 30px;
+    font-size: 2.4rem;
   }
 
   .c-info-item {
-    margin: 20px 0px;
-    width: 100%;
+    margin: 2rem 0;
+  }
+
+  .c-right {
+    padding: 5rem;
   }
 
   .c-desc {
-    display: none;
-  }
-
-  form {
-    margin-top: 0px;
-    display: flex;
-    flex-wrap: wrap;
-  }
-
-  input {
-    width: 35%;
-    height: 40px;
-    margin: 10px;
-    margin-left: 0;
-  }
-
-  button {
-    margin-top: 10px;
+    font-size: 1.6rem;
   }
 }

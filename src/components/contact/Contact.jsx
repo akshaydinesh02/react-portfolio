@@ -6,9 +6,19 @@ import { SwitchContext } from "../../context";
 const Contact = () => {
   const formRef = useRef();
   const [message, setMessage] = useState(false);
+  const initialFormState = {
+    name: "",
+    subject: "",
+    email: "",
+    message: "",
+  };
+
+  const [formState, setFormState] = useState(initialFormState);
 
   const theme = useContext(SwitchContext);
   const darkMode = theme.state.darkMode;
+
+  const inputRef = useRef();
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -31,6 +41,15 @@ const Contact = () => {
         }
       );
   };
+
+  const changeHandler = (e) => {
+    const { name, value } = e.target;
+    const inputName = name;
+    const updatedFormState = { ...formState };
+    updatedFormState[inputName] = value;
+    setFormState(updatedFormState);
+  };
+
   return (
     <div id="contact" className={`c ${darkMode ? "dark" : "light"}`}>
       <div className="c-bg"></div>
@@ -44,7 +63,7 @@ const Contact = () => {
               {/* <img src={Email} alt="" className="c-icon" /> */}
             </div>
             <div className="c-info-item">
-              <i class="c-icon fa-solid fa-location-dot"></i>
+              <i className="c-icon fa-solid fa-location-dot"></i>
               <div className="c-info-item--text"> Bengaluru, Karnataka</div>
             </div>
           </div>
@@ -57,28 +76,37 @@ const Contact = () => {
           </p>
           <form className="c-form" ref={formRef} onSubmit={handleSubmit}>
             <input
+              // ref={inputRef}
               className="c-form-input input"
               type="text"
               placeholder="Name"
-              name="user_name"
+              name="name"
+              value={formState.name}
+              onChange={changeHandler}
             />
             <input
               className="c-form-input input"
               type="text"
               placeholder="Subject"
-              name="user_subject"
+              name="subject"
+              value={formState.subject}
+              onChange={changeHandler}
             />
             <input
               className="c-form-input input"
               type="text"
               placeholder="Email"
-              name="user_email"
+              name="email"
+              value={formState.email}
+              onChange={changeHandler}
             />
             <textarea
               className="c-form-input message"
               rows="5"
               placeholder="Message"
               name="message"
+              value={formState.message}
+              onChange={changeHandler}
             />
             <button className="btn btn-submit">Submit</button>
             <p className="user-success">

@@ -12,7 +12,7 @@ export const products = [
   {
     id: 3,
     img: "https://i.imgur.com/58vlAcO.jpg",
-    link: "https://todoapp.exyoursize.fit",
+    link: "https://todo.exyoursize.fit",
   },
   {
     id: 4,

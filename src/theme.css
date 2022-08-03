@@ -74,15 +74,9 @@
   border-bottom: 1px solid black;
 }
 
-/* Toggle theme */
-.t.light {
-  background-color: white;
-}
-
-.t.light .t-button {
-  background-color: #999;
-}
-
+/* Toggle theme, nav icon, nav bar */
+.t.light .t-button,
+.n.light .n-icon,
 .n.light .n-menu-item {
   color: #333;
 }
@@ -173,15 +167,9 @@
   color: white;
 }
 
-/* Toggle theme */
-.t.dark {
-  background-color: white;
-}
-
-.t.dark .t-button {
-  background-color: #999;
-}
-
+/* Toggle theme, nav icon, nav bar */
+.t.dark .t-button,
+.n.dark .n-icon,
 .n.dark .n-menu-item {
   color: white;
 }

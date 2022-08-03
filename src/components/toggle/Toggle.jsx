@@ -1,6 +1,4 @@
 import "./toggle.css";
-import Sun from "../../img/sun.png";
-import Moon from "../../img/moon.png";
 import { useContext } from "react";
 import { SwitchContext } from "../../context";
 
@@ -13,13 +11,9 @@ const Toggle = () => {
   };
   return (
     <div className={`t ${darkMode ? "dark" : "light"}`}>
-      <img src={Sun} alt="" className="t-icon" />
-      <img src={Moon} alt="" className="t-icon" />
-      <div
-        className="t-button"
-        onClick={handleClick}
-        style={{ left: theme.state.darkMode ? 0 : 25 }}
-      ></div>
+      <button className={`t-button`} onClick={handleClick}>
+        <i className="fa-solid fa-circle-half-stroke t-icon"></i>
+      </button>
     </div>
   );
 };

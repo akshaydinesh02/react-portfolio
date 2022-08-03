@@ -57,11 +57,7 @@ const About = () => {
           and take photos!
         </div>
         <div className="a-award">
-          {/* <img src={Instagram} alt="" className="a-award-img" /> */}
-          {/* <i class="a-icon-dumbbell fa-solid fa-dumbbell"></i> */}
-          <i class="a-icon-dumbbell fa-solid fa-heart-pulse"></i>
-          {/* <i class="a-icon-dumbbell fa-solid fa-heart"></i> */}
-          {/* <i className="i-social-icon fa-brands fa-instagram eyz-insta"></i> */}
+          <i className="a-icon-dumbbell fa-solid fa-heart-pulse"></i>
           <div className="a-award-texts">
             <h4 className="a-award-title tertiary-heading">
               Nutrition & Fitness Consultation

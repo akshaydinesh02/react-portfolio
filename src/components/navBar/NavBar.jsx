@@ -17,10 +17,13 @@ const NavBar = () => {
 
   return (
     <div className={`n ${darkMode ? "dark" : "light"}`}>
-      {/* <button className="n-icon" onClick={menuHandler}>
+      <button
+        className={`n-icon ${menuOpen ? "active" : "inactive"} `}
+        onClick={menuHandler}
+      >
         <i className="fa-solid fa-bars"></i>
-      </button> */}
-      <nav className={`nav-wrapper mobile ${menuOpen ? "active" : "active"} `}>
+      </button>
+      <nav className={`nav-wrapper mobile`}>
         <Link className="n-menu-item" to="#intro" smooth>
           Introduction
         </Link>
@@ -33,8 +36,8 @@ const NavBar = () => {
         <Link className="n-menu-item" to="#contact" smooth>
           Contact
         </Link>
-        <Toggle className="n-menu-item" />
       </nav>
+      <Toggle className="n-menu-item" />
     </div>
   );
 };
