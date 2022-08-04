@@ -6,7 +6,6 @@ import Toggle from "../toggle/Toggle";
 
 const NavBar = () => {
   const menu = useContext(SwitchContext);
-  console.log(menu);
   const menuOpen = menu.state.menuOpen;
   const theme = useContext(SwitchContext);
   const darkMode = theme.state.darkMode;
@@ -16,28 +15,42 @@ const NavBar = () => {
   };
 
   return (
-    <div className={`n ${darkMode ? "dark" : "light"}`}>
-      <button
-        className={`n-icon ${menuOpen ? "active" : "inactive"} `}
-        onClick={menuHandler}
-      >
-        <i className="fa-solid fa-bars"></i>
-      </button>
-      <nav className={`nav-wrapper mobile`}>
-        <Link className="n-menu-item" to="#intro" smooth>
-          Introduction
-        </Link>
-        <Link className="n-menu-item" to="#about" smooth>
-          About Me
-        </Link>
-        <Link className="n-menu-item" to="#pl" smooth>
-          My work
-        </Link>
-        <Link className="n-menu-item" to="#contact" smooth>
-          Contact
-        </Link>
+    <div className={`n ${darkMode ? "dark" : "light"} noselect`}>
+      <nav className={`nav-wrapper ${menuOpen ? "active" : "inactive"} `}>
+        <button className={`n-icon `} onClick={menuHandler}>
+          <i className="n-icon-hamburger fa-solid fa-bars"></i>
+        </button>
+        <div className="nav-bar">
+          <Link
+            className="n-menu-item"
+            to="#intro"
+            onClick={menuHandler}
+            smooth
+          >
+            Introduction
+          </Link>
+          <Link
+            className="n-menu-item"
+            to="#about"
+            onClick={menuHandler}
+            smooth
+          >
+            About Me
+          </Link>
+          <Link className="n-menu-item" to="#pl" onClick={menuHandler} smooth>
+            My work
+          </Link>
+          <Link
+            className="n-menu-item"
+            to="#contact"
+            onClick={menuHandler}
+            smooth
+          >
+            Contact
+          </Link>
+        </div>
       </nav>
-      <Toggle className="n-menu-item" />
+      <Toggle />
     </div>
   );
 };

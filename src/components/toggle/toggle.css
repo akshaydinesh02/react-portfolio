@@ -1,10 +1,8 @@
 .t-button {
-  width: 2.5rem;
-  height: 2.5rem;
   position: fixed;
-  top: 1rem;
-  right: 2rem;
   z-index: 999;
+  top: 2rem;
+  right: 1.6rem;
   display: flex;
   align-items: center;
   font-size: 2.4rem;

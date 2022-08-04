@@ -24,6 +24,34 @@ font size = 84em  */
     font-size: 50%;
   }
 
+  .n-icon {
+    display: flex;
+    position: fixed;
+    z-index: 999;
+    top: 2rem;
+    left: 1.6rem;
+  }
+
+  .nav-bar {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    flex-direction: column;
+
+    width: 100vw;
+  }
+
+  .nav-wrapper.active .nav-bar {
+    transform: translateY(0);
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .nav-wrapper.inactive .nav-bar {
+    transform: translateY(-100%);
+    transition: transform 0.3s ease-in-out;
+  }
+
   .i {
     flex-direction: column-reverse;
     padding-bottom: 1rem;

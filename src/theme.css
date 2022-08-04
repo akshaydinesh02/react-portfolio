@@ -81,6 +81,16 @@
   color: #333;
 }
 
+.n.light .nav-wrapper.active .nav-bar {
+  background-color: #fff;
+}
+
+.n.light .nav-wrapper.active .n-icon,
+.n.light .nav-wrapper.active .n-menu-item,
+.t.light .t-button.active .t-icon {
+  color: #333;
+}
+
 .n.light .n-menu-item:hover,
 .n.light .n-menu-item:active {
   text-shadow: 0 0 2.5rem #495057;
@@ -171,6 +181,16 @@
 .t.dark .t-button,
 .n.dark .n-icon,
 .n.dark .n-menu-item {
+  color: white;
+}
+
+.n.dark .nav-wrapper.active .nav-bar {
+  background-color: #222;
+}
+
+.n.dark .nav-wrapper.active .n-icon,
+.n.dark .nav-wrapper.active .n-menu-item,
+.t.dark .t-button.active .t-icon {
   color: white;
 }
 
