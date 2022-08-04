@@ -11,7 +11,7 @@ export const products = [
   },
   {
     id: 3,
-    img: "https://i.imgur.com/58vlAcO.jpg",
+    img: "https://i.imgur.com/ehlDWqu.jpg",
     link: "https://todo.exyoursize.fit",
   },
   {

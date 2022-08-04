@@ -22,7 +22,6 @@ font size = 84em  */
     padding: 1rem;
     align-items: center;
     justify-content: center;
-    text-align: center;
     height: 100%;
     gap: 0.5rem;
   }
@@ -30,6 +29,10 @@ font size = 84em  */
   .i-name,
   .i-desc {
     margin-bottom: 3rem;
+  }
+
+  .i-social {
+    margin-bottom: 2rem;
   }
 }
 
