@@ -13,6 +13,14 @@
 font size = 84em  */
 /**********************************/
 @media screen and (max-width: 84em) {
+  html {
+    /* 9px / 16px = 0.5625 (56.25%) [default font-size: 10] */
+    font-size: 56.25%;
+  }
+
+  .nav-bar-mobile {
+    display: none;
+  }
 }
 
 /**********************************/
@@ -20,7 +28,7 @@ font size = 84em  */
 /**********************************/
 @media screen and (max-width: 32em) {
   html {
-    /* 7px / 16px = 0.5625 (56.25%) [default font-size: 10] */
+    /* 8px / 16px = 0.5 (50%) [default font-size: 10] */
     font-size: 50%;
   }
 
@@ -38,7 +46,7 @@ font size = 84em  */
     top: 0;
     left: 0;
     flex-direction: column;
-
+    height: 50vh;
     width: 100vw;
   }
 

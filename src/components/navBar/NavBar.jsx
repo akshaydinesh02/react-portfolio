@@ -10,8 +10,14 @@ const NavBar = () => {
   const theme = useContext(SwitchContext);
   const darkMode = theme.state.darkMode;
 
-  const menuHandler = () => {
-    menu.dispatch({ type: "TOGGLE-MENU" });
+  const menuHandler = (e) => {
+    menu.dispatch({
+      type: "TOGGLE-MENU",
+    });
+  };
+
+  const menuCloseHandler = () => {
+    menu.dispatch({ type: "FALSE" });
   };
 
   return (
@@ -24,7 +30,7 @@ const NavBar = () => {
           <Link
             className="n-menu-item"
             to="#intro"
-            onClick={menuHandler}
+            onClick={menuCloseHandler}
             smooth
           >
             Introduction
@@ -32,18 +38,23 @@ const NavBar = () => {
           <Link
             className="n-menu-item"
             to="#about"
-            onClick={menuHandler}
+            onClick={menuCloseHandler}
             smooth
           >
             About Me
           </Link>
-          <Link className="n-menu-item" to="#pl" onClick={menuHandler} smooth>
+          <Link
+            className="n-menu-item"
+            to="#pl"
+            onClick={menuCloseHandler}
+            smooth
+          >
             My work
           </Link>
           <Link
             className="n-menu-item"
             to="#contact"
-            onClick={menuHandler}
+            onClick={menuCloseHandler}
             smooth
           >
             Contact

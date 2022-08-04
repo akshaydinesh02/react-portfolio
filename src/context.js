@@ -15,6 +15,8 @@ const functionReducer = (state, action) => {
       return { ...state, darkMode: !state.darkMode };
     case "TOGGLE-MENU":
       return { ...state, menuOpen: !state.menuOpen };
+    case "FALSE":
+      return { ...state, menuOpen: false };
     default:
       return state;
   }
