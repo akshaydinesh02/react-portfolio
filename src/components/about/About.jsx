@@ -54,7 +54,7 @@ const About = () => {
           </ul>
           <br />
           Apart from that I like to travel, practice martial arts, lift weights
-          and take photos!
+          and click pictures!
         </div>
         <div className="a-award">
           <i className="a-icon-dumbbell fa-solid fa-heart-pulse"></i>

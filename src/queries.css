@@ -12,14 +12,24 @@
 /* 1350 (container size) / 16 (default
 font size = 84em  */
 /**********************************/
-@media screen and (max-width: 84em) {
+@media screen and (max-width: 86em) {
   html {
-    /* 9px / 16px = 0.5625 (56.25%) [default font-size: 10] */
-    font-size: 56.25%;
+    /* 8px / 16px = 0.5 (50%) [default font-size: 10] */
+    font-size: 50%;
   }
 
-  .nav-bar-mobile {
-    display: none;
+  .i-left-wrapper {
+    padding: 1rem;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+    gap: 0.5rem;
+  }
+
+  .i-name,
+  .i-desc {
+    margin-bottom: 3rem;
   }
 }
 

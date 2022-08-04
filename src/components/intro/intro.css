@@ -21,6 +21,7 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
+  gap: 1rem;
 }
 
 .i-intro {
@@ -34,7 +35,6 @@
 
 .i-title {
   height: 5rem;
-  overflow: hidden;
 }
 
 .i-title-item {

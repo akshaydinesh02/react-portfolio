@@ -12,6 +12,8 @@ const Intro = () => {
     linkedin: "https://www.linkedin.com/in/akshaydinesh02/",
     github: "https://github.com/akshay-dinesh/",
     instagram: "https://www.instagram.com/akshay.dinesh/",
+    resume:
+      "https://docs.google.com/document/d/1v5NBV0UymTAKIglEMgZ5nwMVF_cOFKV_/edit?usp=sharing&ouid=117010981329994470499&rtpof=true&sd=true",
   };
 
   return (
@@ -41,9 +43,15 @@ const Intro = () => {
               </a>
             </div>
             <div className="i-cta">
-              <HashLink to="" className="btn btn-resume" name="Resume">
+              <a
+                href={linksObject.resume}
+                className="btn btn-resume"
+                name="Resume"
+                target="_blank"
+                rel="noreferrer"
+              >
                 Resume
-              </HashLink>
+              </a>
               <HashLink to="#contact" className="btn btn-contact" smooth>
                 Contact
               </HashLink>
