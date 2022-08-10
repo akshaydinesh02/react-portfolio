@@ -16,8 +16,8 @@ export const products = [
   },
   {
     id: 4,
-    img: "https://hatrabbits.com/wp-content/uploads/2017/01/random.jpg",
-    link: "https://www.google.co.in",
+    img: "https://i.imgur.com/ISHQZQe.jpg",
+    link: "https://carousel.exyoursize.fit",
   },
   {
     id: 5,
