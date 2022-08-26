@@ -21,8 +21,8 @@ export const products = [
   },
   {
     id: 5,
-    img: "https://hatrabbits.com/wp-content/uploads/2017/01/random.jpg",
-    link: "https://www.google.co.in",
+    img: "https://i.imgur.com/kJ5TZK4.jpg",
+    link: "https://estatery.exyoursize.fit",
   },
   {
     id: 6,
